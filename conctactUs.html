@@ -1,0 +1,294 @@
+<!doctype html>
+<!-- This is a page created for Web Design Module Assignment. Copyright Zeynep Ermis 2021 -->
+<html lang="en">
+<!-- This tag is specify the language on this page is English, only by default this can be assumed the case with HTML -->
+<head>
+     <Title>BikEco</Title>
+     <link rel="stylesheet" type="text/css" href="textstyle.css"/>
+     <link rel="icon" href="images/favicon.ico"/>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/><!-- This is Font-Awosome link for some icons -->
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta charset="UTF-8">
+     <style>
+
+
+            *{          
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+            font-family: calibri;
+            }
+
+            label.logo{                 /*  Logo and Title design */
+            color: white;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 100px;
+            font-weight: bold;
+            }
+
+             /* Navigation Bar Section*/
+
+            .menu-bar{        
+            background: #fca311;
+            height: 80px;
+            width: 100%;
+            }
+
+            .menu-bar ul{
+            float: right;
+            margin-right: 20px;
+            }
+
+            .menu-bar ul li{
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+            }
+
+            .menu-bar ul li a{
+            color: white;
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            font-weight: bold;
+            }
+
+            .menu-bar ul li a:hover {
+                background: #ffdfaa;
+                border-radius: 4px;
+                color: #fff;
+            }
+
+             /*  Check Box Class */
+            .check-button{
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+            }
+
+            #check{
+            display: none;
+            }
+
+             /*  Responsive Footer Design  */
+             @media only screen and (max-width:992px) {
+                .detailsOfSteps {flex-wrap: wrap ;}
+                .detailsOfSteps-context {width: 48%;}
+                .border1 table {display: none;}
+                  
+                 iframe {display: none;}
+                .border1 table {display: none;}
+                .footer{height: 100vh;}
+
+                .footer .context{
+                    display: flex;
+                    width: 100%;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            /*  Responsive Menu design for mobile phones, tablets */
+            @media (max-width: 952px){
+
+            nav ul li a{
+                font-size: 16px;
+            }
+            }
+            @media (max-width: 858px){
+            .check-button{
+                display: block;
+            }
+            .menu-bar ul{
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background:#FFCC66;
+                top: 80px;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+            }
+            .menu-bar ul li{
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+            .menu-bar ul li a{
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .menu-bar ul li a:hover {
+                background: #ffdfaa;
+                border-radius: 4px;
+                color: #fff;
+            }
+            #check:checked ~ ul{
+                left: 0;
+            }
+            }
+
+            /*  Responsive Footer Design  */
+            @media only screen and (max-width:992px){
+                .detailsOfSteps {flex-wrap: wrap ;}
+                .detailsOfSteps-context {width: 48%;}
+            }
+
+            @media only screen and (max-width:768px){
+                .footer{height: 100vh;}
+
+                .footer .context{
+                    display: flex;
+                    width: 100%;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+
+            }
+
+
+     </style>
+</head>
+
+<body>
+    <nav class="menu-bar">  <!-- Navigation Bar Section-->
+        <input type="checkbox" id="check">
+        <label for="check" class="check-button">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo"> <img src="images/LOGO.png" style="width: 180px; margin-top:15px;" alt=" some of beenfits"></label>
+        <ul>
+            <li><a href="index.html"> HOME PAGE</a></li>
+            <li><a href="howItWorks.html">HOW IT WORKS?</a></li>
+            <li><a href="bicycleTypes.html">BICYCLE TYPES</a></li>
+            <li><a href="conctactUs.html">CONTACT US</a></li>
+            <li><a href="signUp.html">SIGN UP</a></li>
+            <li><a href="logIn.html">LOG IN</a></li>
+            <li>
+                <form><INPUT placeholder="Search" TYPE="text" SIZE="25" class="input-text"></form>
+            </li>
+        </ul>
+    </nav>
+
+    <br>
+    <div><h1>CONTACT US</h1></div> <br>
+    <p class="MyParagrahpStyle">Please, contact us for any problem, suggestion or whatever comes to your
+        mind about
+        our company.</p>
+    <p class="MyParagrahpStyle"> We’d love to talk to you, if you want us to help you well, please provide
+        <i>detailed</i> information!</p>
+    <br>
+
+    <div class="MyParagrahpStyle container-form">
+
+        <p><strong>First Name * <br></strong><INPUT placeholder="Your Name" TYPE="text" SIZE="25"
+                                                    class="input-text" style="width: 100%"></p> <br>
+        <p><strong> Surname * <br></strong><INPUT placeholder="Your Surname" TYPE="text" SIZE="25"
+                                                class="input-text" style="width: 100%"></p> <br>
+        <p><strong> E-mail * <br></strong><INPUT placeholder="Enter Email" TYPE="text" SIZE="25"
+                                                class="input-text" style="width: 100%"></p> <br>
+        <p><strong> Contact Number * <br></strong><INPUT placeholder="Enter Contact Number" TYPE="text" SIZE="25"
+                                                        class="input-text" style="width: 100%"></p> <br>
+        <p><strong>Comments * <br></strong><TEXTAREA NAME="comments" COLS="35" rows="4" class="input-textarea"
+                                                    style="width: 100%"> </TEXTAREA>
+        </p>  <br>
+
+        <strong>Get news&offers?</strong> 
+        <p><INPUT NAME="gender" TYPE="radio" VALUE="Male"> Yes, please. </p>
+        <p><INPUT NAME="gender" TYPE="radio" VALUE="Male"> No, thanks. </p> 
+            <br>
+        <INPUT name="button1" TYPE="button" VALUE="SUBMIT" class="button" style="width: 100%;"></div> <br><br>
+
+    <div class="whyBikEco"> 
+        <h1 class="text-center">Why rent a bike at BikEco?</h1> <br>
+        <p class="MyParagrahpStyle">
+            BikEco company was established in 2021 in order to contribute to the environment, people's health, both
+            physical and mental, and similar aspects.
+            In other words, BikEco is here to benefit many aspects of people. In a short time, we achieved the
+            success to have a wide range of customers.
+            One of the main concepts of bicycle services is reduced to use car or public transportation and provides
+            affordable and environmentally friendly
+            bicycles to people who do not have access to the vehicle. Our employees work hard to do everything best.
+            If any of you rent a bike from us,
+            you will have no doubt that you will meet our friendly professional employees. <br>
+            Our bikes are of the best quality, and are maintained frequently.
+            At the same time, our hubs are open 24/7 and you can leave our 8 branches by hop on / hop off whenever
+            you want.
+            BikEco provides <strong>insurance</strong> to the riders! <br>
+            There is no reason to wait for you to join us after hearing so many benefits!
+        </p>
+    </div>  <br>
+
+
+    <div class="photo-gallery">
+        <h1 class="text-center">Photo Gallery</h1>  <br>
+        <p class="MyParagrahpStyle text-center"> Thank you very much for the pictures from you.
+            You can send us an <A HREF=mailto:BikEco@gmail.com> <strong>mail</strong></A> to share your experiences
+            with us!</p>  <br>
+        <img class="zoom" src="images/photogallery1.jpg" alt="photo of our customers">
+        <img class="zoom" src="images/photogallery2.jpg" alt="photo of our customers ">
+        <img class="zoom" src="images/photogallery3.jpg" alt="photo of our customers ">
+        <img class="zoom" src="images/photogallery4.jpg" alt="photo of our customers ">
+    </div> <br><br>
+ 
+
+    <div>
+
+        <h2 class="text-center">Enter your email to learn more! </h2><br>
+        <table style="margin:auto">
+            <tr>
+                <th><INPUT placeholder="E-mail" TYPE="email" SIZE="40" class="input-text" style="border: 1px solid"></th>
+                <th><INPUT TYPE="button" VALUE="Subscribe" class="button" style="width: 100px"></th>
+            </tr>
+        </table> 
+    </div>  <br>
+    <br><br><br>
+
+
+    <div class="footer">
+        <!-- The Div containing the footer -->
+        <div class="context">
+            <h3>Contact Us</h3>
+            <p> If you want to share your opinion, suggestion or complaint, you can send it to us by filling the "Contact
+                Us Form". We will evaluate it as soon as possible and get back to you.</p>
+        </div>
+        <div class="context">
+            <h3>About Us</h3>
+            <p> BikEco is a newly established rental bike supplier in London, was established in 2021 in order to
+                contribute to the environment, people's health, both physical and mental, and similar aspects.
+            </p>
+        </div>
+        <div class="context">
+            <h3>How It Works?</h3>
+            <p> Do not miss the chance to rent a bike in 4 steps. For detailed information, please visit this <a
+                    href="howItWorks.html"><strong>page</strong></a>.
+                If you think this page does not provide enough help, you can send us an <A HREF=mailto:BikEco@gmail.com>
+                        <strong>email</strong></A>.</p>
+        </div>
+        <div class="social">
+            <div class="header"> <br> 
+                <p style="font-weight: bold; text-align: center;">Follow us on social media to support and hear the
+                        latest announcements!</p> 
+            </div>
+            <div class="context-media">  <br>
+                <a href="http://www.facebook.com"> <i class="fab fa-facebook"></i></a>
+                <a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            </div>
+            <br> <strong>© 2021 BikEco</strong>
+        </div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,397 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Calibri;
+    align-items: center;
+}
+/* Headers Section*/
+h1{
+    color: #30c23d;
+    font-size: 40px;
+}
+
+h2{
+    color: #fca311;
+    font-size: 20px;
+    
+}
+
+h5{
+    color: #fca311;
+    font-size: 18px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.MyParagrahpStylePage1 { 
+	color:#495057;			/* Paragraphs set as Calibri, 16px, and #495057 */
+	font-size:16px;
+	font-family:Calibri;
+	text-align: center;
+	list-style-type: none;
+}
+
+.MyParagrahpStylePage1 p{
+    font-weight: bold;
+}
+
+/* Gallery css */
+
+.gallery{
+    background:url(images/sh1.png);
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+    background-size:cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-bottom: 3px solid #e5e5e5;
+    padding-bottom: 20px;
+}
+
+.gallery-header h1 {
+    color: #30c23d;
+    font-size: 40px;
+    margin-bottom: -30px;
+}
+
+.gallery-header h5 {
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 120px;
+}
+
+
+.border1{
+    border-width: 10px; 				/* this is for border1 style*/
+    border-style:solid;	
+    border-color: #e5e5e5;
+    border-radius: 10px;
+    background-color: #e5e5e5;
+    text-align:center; 
+    }
+
+
+/* Conteiner 2 css */ 
+
+.container-2 {
+    display: flex;
+    width: 95%;
+    justify-content: space-around;
+}
+
+.box{
+    width: 22%;
+    margin: 2% 0;
+    box-sizing: border-box;
+}
+.box img{
+    width: 75%;
+}
+
+.context {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    text-align: justify;
+}
+
+
+/* This is for buttons */
+.button {					
+	font-family: Calibri;		
+    border-radius: 0.3rem;
+	border:none;
+    height: 1.9rem;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+	background:#fca311;
+	width: 80px;
+}
+
+.button:hover {   
+	color: #ffdfaa;
+    background: #fff;
+    border:0.5px solid #fca311;
+}
+
+
+/*Social Media Icons Section*/
+
+.socialmedia-icons {
+	text-align: center;
+}  
+
+.socialmedia-icons li {
+	display:inline-block;
+	list-style-type:none;
+}
+
+.socialmedia-icons li a {
+	border-bottom: none;
+}
+
+.socialmedia-icons li img {
+	width:50px;
+	height:50px;
+	margin-right: 20px;
+}
+
+/* Image Sizing, Desgin Section*/
+img.small { 
+	height:60px;   					/* Sets size of an image as 60 by 65 pixels*/
+    width:65px;
+}
+
+img.align-left { 
+	float: left;				/*Allows the image to be left of the page. */
+	margin-right: 10px;
+}
+
+.zoom:hover {
+    z-index:10;
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);  
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+/* Footer Section*/
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 45vh;
+    width: 100%;
+    background-color:#fca311;
+    color:white;
+}
+
+.footer .context {
+    width: 33%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+
+.footer .social {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    border-top: 1px solid white; 
+}
+
+
+.footer .social .context-media {
+    flex-direction: row;
+    padding: 0;
+    font-size: 40px;
+}
+
+.footer i {margin-right: 20px;}
+.footer a  {color: #fff;}
+
+
+/* How It Works */
+
+.howItWorks .howItWorks-border {
+    border-width: 5px; 				/* this is for border2 style*/	
+	padding: 40px;
+	background: white;
+	border-width: 8px 33px 8px 33px;
+	border-style: solid;
+	border-color: #e5e5e5 #30c23d #e5e5e5 #30c23d;
+	border-radius: 0px 120px 0px 120px;
+    margin-bottom: 20px;
+}
+.howItWorks h1,h5 {
+    text-align: center;
+}
+
+.howItWorks img {
+    width: 700px;					/* Sets size of an image as 900 by 300 pixels*/
+	height:150px;
+}
+
+/* Details of Steps Seciton*/
+
+.detailsOfSteps{margin-right:20px;
+                margin-left: 20px;
+                width: 95%;        
+}
+
+.detailsOfSteps h3{
+    color:#fca311;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+.detailsOfSteps h4{
+    color:#30c23d;
+    font-size: 18px;
+    margin-left: 8px;
+}
+
+.detailsOfSteps-context ul li{
+    color:#495057;
+}
+
+/* Privacy Policy Design*/
+.privacy{margin-right:20px;
+         margin-left: 7px;
+         width: 95%;        
+}
+
+.privacy h3{
+    color:#fca311;
+    font-size: 20px;
+}
+
+.privacy-context ul li{
+    color:#495057;
+}
+
+/*Mid Area*/
+
+.mid-area{
+    display: flex;
+    width: 95%;
+    justify-content: space-around;
+    
+}
+
+.mid{
+    width: 22%;
+    border: 2px solid grey;
+    border-radius: 15px;
+    margin: 3% 0;
+    box-sizing: border-box;
+    background: #e5e5e5;
+}
+
+.mid-area .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    color: #495057;  
+}
+
+.MyParagrahpStyle {
+    color: #495057;
+}
+
+/*This input-text2 design for inputs.*/
+
+.input-text2 {						 
+	border: none;
+    height: 40px;
+    margin-right: 0.5rem;
+    border-radius: 3px;
+	font-family: Calibri;
+	color: #495057;
+    padding: 5px;
+    margin: 5px 0 6px 0;
+}
+
+ /*This input-text design for inputs.*/
+ 
+ .input-text {						 
+	border: none;
+    height: 30px;
+    border-radius: 3px;
+    margin-right: 0.5rem;
+    padding-left: 6px;
+	font-family: Calibri;
+	color: #495057;
+}
+ 
+/*This input-textarea design for textarea.*/
+
+.input-textarea {						 
+	border: none;
+    border-radius: 3px;
+    margin-right: 0.5rem;
+	font-family: Calibri;
+	color: #495057;
+}
+
+/* Conteiner for forms*/
+
+.container-form {
+    background-color: #e5e5e5;
+    padding: 20px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    
+}
+
+.container-form2{
+    background: #e5e5e5;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 16px;
+}
+
+
+.whyBikEco p {
+    text-align: justify;
+	text-justify: inter-word;
+    width: 75%;
+    margin: auto;
+}
+
+/* Photo Gallery Section*/
+
+.photo-gallery {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.photo-gallery2 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.photo-gallery2 img{
+    height:200px;
+    width: 150;
+}
+
+.photo-gallery img{
+    height:200px;
+    width: 150;
+    border: 3px dotted #e5e5e5;
+}
+
+/* Adds shorthand background to the logIn.html and signUp.html*/
+.shb5{background-image:url('images/sh5.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+a:link {color: blue;}    					/* Hyperlinks to be given Red color when not visited */
+	
+a:visited {color:purple;} 				/* Hyperlinks to turn green once they are visited */

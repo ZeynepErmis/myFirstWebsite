@@ -1,0 +1,551 @@
+<!doctype html>
+<!-- This is a page created for Web Design Module Assignment. Copyright Zeynep Ermis 2021 -->
+<html lang="en">
+<!-- This tag is specify the language on this page is English, only by default this can be assumed the case with HTML -->
+<head>
+     <Title>BikEco</Title>
+     <link rel="stylesheet" type="text/css" href="textstyle.css"/> <!-- The CSS link -->
+     <link rel="icon" href="images/favicon.ico"/>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/><!-- This is Font-Awosome link for some icons -->
+
+     <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- The mobile accesiblity-->
+     <meta charset="UTF-8"> 
+     <style>
+            *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+            font-family: calibri;
+            }
+            label.logo{
+            color: white;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 100px;
+            font-weight: bold;
+            }
+
+             /* Navigation Bar Section*/
+            .menu-bar{
+            background: #fca311;
+            height: 80px;
+            width: 100%;
+            }
+
+            .menu-bar ul{
+            float: right;
+            margin-right: 20px;
+            }
+
+            .menu-bar ul li{
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+            }
+
+            .menu-bar ul li a{
+            color: white;
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            font-weight: bold;
+            }
+
+            .menu-bar ul li a:hover {
+                background: #ffdfaa;
+                border-radius: 4px;
+                color: #fff;
+            }
+
+            /*  Check Box Class */
+            .check-button{
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+            }
+
+            #check{
+            display: none;
+            }
+            
+             /*  Responsive Menu Design  */
+            @media (max-width: 952px) {
+
+            nav ul li a{
+                font-size: 16px;
+            }
+            }
+            @media (max-width: 858px) {
+            .check-button{
+                display: block;
+            }
+            .menu-bar ul{
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background:#FFCC66;
+                top: 80px;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+            }
+            .menu-bar ul li{
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+            .menu-bar ul li a{
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .menu-bar ul li a:hover {
+                background: #ffdfaa;
+                border-radius: 4px;
+                color: #fff;
+            }
+            #check:checked ~ ul{
+                left: 0;
+            }
+            }
+            @media only screen and (max-width:992px){
+                .mid-area {flex-wrap: wrap ;}
+                .mid {width: 48%;}
+            }
+
+             /*  Responsive Footer Design  */
+            @media only screen and (max-width:768px){
+
+                .mid-area {width: 100%;}
+                .mid .content table{flex-direction: row;}
+                .content table {padding: 1%;}
+
+
+                .footer{height: 100vh;}
+
+                .footer .context{
+                    display: flex;
+                    width: 100%;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .howItWorks .howItWorks-border, img {
+                    display: none;
+                }
+
+            }
+
+            @media only screen and (max-width:992px) {
+                .detailsOfSteps {
+                    align-items: center;        
+                }
+
+                .detailsOfSteps h3 {text-align: center;}
+
+                .detailsOfSteps-context {width: 48%;
+                    justify-content: center;
+                    padding: auto;
+                    margin: auto;
+                    
+                }
+            }
+
+     </style>
+</head>
+
+<body>
+    <nav class="menu-bar"> <!-- Navigation Bar Section-->
+        <input type="checkbox" id="check">
+        <label for="check" class="check-button">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo"> <img src="images/LOGO.png" style="width: 180px; margin-top:15px;" alt=" some of beenfits"></label>
+        <ul>
+            <li><a href="index.html"> HOME PAGE</a></li>
+            <li><a href="howItWorks.html">HOW IT WORKS?</a></li>
+            <li><a href="bicycleTypes.html">BICYCLE TYPES</a></li>
+            <li><a href="conctactUs.html">CONTACT US</a></li>
+            <li><a href="signUp.html">SIGN UP</a></li>
+            <li><a href="logIn.html">LOG IN</a></li>
+            <li>
+                <form><INPUT placeholder="Search" TYPE="text" SIZE="25" class="input-text"></form>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="howItWorks">
+        <br><h1>HOW IT WORKS?</h1>
+        <h5>rent a bike in just 4 steps to have fun.</h5><br>
+        <div class="howItWorks-border">
+            <img src="images/howitworks.jpg" alt="How it works?">
+            <!-- this photo for explains how to rent a bike-->
+        </div>
+    </div>
+
+    <div class="detailsOfSteps">
+        <h3>Details of Steps</h3> <br>
+        <div class="detailsOfSteps-context">
+            <h4>Instant Booking</h4>
+            <ul>
+                <li>
+                        Customers can make reservations when requested.
+                </li>
+                <li>
+                        Customers must have a membership to be able to book. If you are not a registered customer, you can
+                        register in a short time.
+                </li>
+                <li>
+                        If customer have questions about how to sing up, you can call customer service or contact us via
+                        <A HREF=mailto:BikEco@gmail.com> <strong>e-mail</strong> </A>.
+                </li>
+                <li>
+                        Compare bike types, locations, prices then choose whichever suits you best.
+                </li>
+                <li>
+                        All our bikes come with insurance included.
+                </li>
+                <li>
+                        The price of bicycles/bicycles to be rented must be paid in this section.
+                </li>
+                <li>
+                        BikEco only accept cards due to corona restrictions but we might accept cash in special cases. The
+                        situation should be explained, after that
+                        individuals have to <A HREF=mailto:BikEco@gmail.com> <strong>email</strong></A> us for this.
+                </li>
+            </ul>
+        </div> <br>
+
+        <div class="detailsOfSteps-context">
+            <h4>Pick up your BikEco</h4>
+            <ul>
+                <li>
+                        There are 8 available BikEco stations in London, customers should book the bike from the station
+                        where want to get it.
+                </li>
+                <li>
+                        We have authorized employees at every station. If there is something you do not like about the bike
+                        or something wrong,
+                        our qualified and friendly employees will help you and the problem will be solved in a short time.
+                </li>
+            </ul>
+        </div> <br>
+
+        <div class="detailsOfSteps-context">
+            <h4>Enjoy your ride</h4>
+            <ul>
+                <li>
+                        Helmets will be provided to you at the stations by the authorities. You have to use a helmet for
+                        your <i>safety/health</i>.
+                </li>
+                <li>
+                        Remember you have a <i>Hop-on/ Drop off</i> chance!
+                </li>
+                <li>
+                        Make sure you ready for a nice ride with us!
+                </li>
+            </ul>
+        </div> <br>
+
+        <div class="detailsOfSteps-context">
+            <h4>Park</h4>
+            <ul >
+                <li>
+                        Parking is one of the most important issues for us. For a high quality ride, each individual should
+                        use the bicycle carefully.
+                </li>
+                <li>
+                        Our stations are open 24/7, protected by security guards and cameras for security.
+                </li>
+                <li>
+                        You can pick up one of our 8 stations whichever suits you best.
+                </li>
+            </ul>
+        </div>
+    </div> <br>
+
+
+    <h2>Pricing List</h2>
+    <div class="mid-area">
+        <div class="mid">
+            <div class="content">
+                <table>
+
+                        <caption><strong>City Bike<br><br></strong></caption>
+
+                        <!--the<thead> is the first section of a table-->
+                        <!--it formats the table header area-->
+
+                        <thead>
+                        <tr>            <!--<tr> inserts a table row-->
+                            <th>Hours</th> <!--insert a heading cell-->
+                            <th>Pricing</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+
+                        <tr>
+                            <td>20 hours/pw</td><!--insert a data cell-->
+                            <td>£15</td>
+
+                        </tr>
+
+                        <tr>
+                            <td>30/pw</td>
+                            <td>£20</td>
+                        </tr>
+
+                        <tr>
+                            <td>40/pw</td>
+                            <td>£25</td>
+                        </tr>
+
+                        <tr>
+                            <td>60/pw</td>
+                            <td>£40</td>
+                        </tr>
+
+                        <tr>
+                            <td>Unlimited hours/pw</td>
+                            <td>£60</td>
+                        </tr>
+
+                        </tbody>
+                </table>
+
+
+            </div>
+        </div>
+        <div class="mid">
+            <div class="content">
+                <table>
+
+                        <caption><strong>E-Scooter<br><br></strong></caption>
+
+                        <!--the<thead> is the first section of a table-->
+                        <!--it formats the table header area-->
+
+                        <thead>
+                        <tr>            <!--<tr> inserts a table row-->
+                            <th>Hours</th> <!--insert a heading cell-->
+                            <th>Pricing</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+
+                        <tr>
+                            <td>20 hours/pw</td><!--insert a data cell-->
+                            <td>£20</td>
+
+                        </tr>
+
+                        <tr>
+                            <td>30/pw</td>
+                            <td>£27</td>
+                        </tr>
+
+                        <tr>
+                            <td>40/pw</td>
+                            <td>£30</td>
+                        </tr>
+
+                        <tr>
+                            <td>60/pw</td>
+                            <td>£43</td>
+                        </tr>
+
+                        <tr>
+                            <td>Unlimited hours/pw</td>
+                            <td>£60</td>
+                        </tr>
+
+                        </tbody>
+
+                </table>
+
+            </div>
+        </div>
+
+        <div class="mid">
+            <div class="content">
+                <table>
+                        <caption><strong>Parent-Children Tandem<br><br></strong></caption>
+
+                        <!--the<thead> is the first section of a table-->
+                        <!--it formats the table header area-->
+
+                        <thead>
+                        <tr>            <!--<tr> inserts a table row-->
+                            <th>Hours</th>
+                            <th>Pricing</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+
+                        <tr>
+                            <td>20 hours/pw</td><!--insert a data cell-->
+                            <td>£15</td>
+
+                        </tr>
+
+                        <tr>
+                            <td>30/pw</td>
+                            <td>£20</td>
+                        </tr>
+
+                        <tr>
+                            <td>40/pw</td>
+                            <td>£25</td>
+                        </tr>
+
+                        <tr>
+                            <td>60/pw</td>
+                            <td>£30</td>
+                        </tr>
+
+                        <tr>
+                            <td>Unlimited hours/pw</td>
+                            <td>£60</td>
+                        </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="mid">
+            <div class="content">
+                <table>
+                        <caption><strong>Mountain Bike<br><br></strong></caption>
+
+                        <!--the<thead> is the first section of a table-->
+                        <!--it formats the table header area-->
+
+                        <thead>
+                        <tr>
+                            <th>Hours</th>
+                            <th>Pricing</th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+
+                        <tr>
+                            <td>20 hours/pw</td>
+                            <td>£20</td>
+                        </tr>
+
+                        <tr>
+                            <td>30/pw</td>
+                            <td>£27</td>
+                        </tr>
+
+                        <tr>
+                            <td>40/pw</td>
+                            <td>£30</td>
+                        </tr>
+
+                        <tr>
+                            <td>60/pw</td>
+                            <td>£43</td>
+                        </tr>
+
+                        <tr>
+                            <td>Unlimited hours/pw</td>
+                            <td>£60</td>
+                        </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="privacy">
+        <h3>Privacy/Policy</h3>
+        <div class="privacy-context">
+            <ul>
+                <li>BikEco may ask for some of your information such as your name, address, e-mail address,
+                        and personal information like that when you sign up for BikEco account.
+                        We do not collect the information you give us without your authorization, we collect it with your
+                        consent.
+                        Your information may be used to contact you in the future, such as promotional offers, discounts or
+                        to
+                        keep in
+                        touch information about a new product to you.
+                </li>
+                <li>Individual safety is a very important and serious issue for us, so our employees are
+                        carefully selected
+                        accordingly.
+                        Our customers' information is only seen by BikEco and this information is not shared and is never
+                        sold
+                        with
+                        a third party outside the company also is protected by our expert employees with high security.
+                </li>
+                <li>Each part of this website that collects personal or financial information is encrypted
+                        to protect our
+                        customers'
+                        information.
+                        The collected information can be checked for accuracy, changed, and deleted at any time by our
+                        customers.
+                        Please, don’t hesitate to <A HREF=mailto:BikEco@gmail.com> <strong>contact</strong></A> us if the
+                        company
+                        has
+                        a
+                        privacy / policy vulnerability or if you have any concerns about it how BikEco uses customer’s
+                        information.
+                        If there is a change in our privacy / policy rules, it will be sent to you by e-mail.
+                </li>
+                <li>Finally, we would like to remind you that your privacy is very important to us and
+                        thank you for your trust in
+                        us.
+                </li>
+            </ul>
+
+        </div>
+    </div> <br><br>
+
+
+    <div class="footer">
+        <!-- The Div containing the footer -->
+        <div class="context">
+            <h3>Contact Us</h3>
+            <p> If you want to share your opinion, suggestion or complaint, you can send it to us by filling the "Contact
+                Us Form". We will evaluate it as soon as possible and get back to you.</p>
+        </div>
+        <div class="context">
+            <h3>About Us</h3>
+            <p> BikEco is a newly established rental bike supplier in London, was established in 2021 in order to
+                contribute to the environment, people's health, both physical and mental, and similar aspects.
+            </p>
+        </div>
+        <div class="context">
+            <h3>How It Works?</h3>
+            <p> Do not miss the chance to rent a bike in 4 steps. For detailed information, please visit this <a
+                    href="howItWorks.html"><strong>page</strong></a>.
+                If you think this page does not provide enough help, you can send us an <A HREF=mailto:BikEco@gmail.com>
+                        <strong>email</strong></A>.</p>
+        </div>
+        <div class="social">
+            <div class="header"> <br>
+                <p style="font-weight: bold; text-align: center;">Follow us on social media to support and hear the
+                        latest announcements!</p>
+            </div>
+            <div class="context-media">  <br>
+                <a href="http://www.facebook.com"> <i class="fab fa-facebook"></i></a>
+                <a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            </div>
+            <br> <strong>© 2021 BikEco</strong>
+        </div>
+    </div>
+
+
+</body>
+</html>

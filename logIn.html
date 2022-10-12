@@ -1,0 +1,237 @@
+<!doctype html>
+<!-- This is a page created for Web Design Module Assignment. Copyright Zeynep Ermis 2021 -->
+<html lang="en">
+<!-- This tag is specify the language on this page is English, only by default this can be assumed the case with HTML -->
+<head>
+     <Title>BikEco</Title>
+     <script>
+        function ValidationCheck(form) {
+          if (form.UserNameInput.value == "")
+            alert("You forgot to put anything for Name!")
+        if (form.PasswordInput.value == "" ) 
+           alert("You did not enter password!");}
+   
+   </script>
+
+     <link rel="stylesheet" type="text/css" href="textstyle.css"/>
+     <meta charset="UTF-8">
+     <link rel="icon" href="images/favicon.ico"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <style>
+                *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+            font-family: calibri;
+            }
+            label.logo{
+            color: white;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 100px;
+            font-weight: bold;
+            }
+
+            /* Navigation Bar Section*/
+            .menu-bar{
+            background: #fca311;
+            height: 80px;
+            width: 100%;
+            }
+
+            .menu-bar ul{
+            float: right;
+            margin-right: 20px;
+            }
+
+            .menu-bar ul li{
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+            }
+
+            .menu-bar ul li a{
+            color: white;
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            font-weight: bold;
+            }
+
+            .menu-bar ul li a:hover {
+                background: #ffdfaa;
+                border-radius: 4px;
+                color: #fff;
+            }
+
+            /*  Check Box Class */
+            .check-button{
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+            }
+
+            #check{
+            display: none;
+            }
+            
+            @media (max-width: 952px){
+
+            nav ul li a{
+                font-size: 16px;
+            }
+            }
+            @media (max-width: 858px){
+            .check-button{
+                display: block;
+            }
+            .menu-bar ul{
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background:#FFCC66;
+                top: 80px;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+            }
+            .menu-bar ul li{
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+            .menu-bar ul li a{
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .menu-bar ul li a:hover {
+                background: #ffdfaa;
+                border-radius: 4px;
+                color: #fff;
+            }
+            #check:checked ~ ul{
+                left: 0;
+            }
+            }
+
+            @media only screen and (max-width:992px){
+                .container-2 {flex-wrap:wrap ;}
+                .box{width: 48%;}
+                .box img {width: 30%;}
+
+            }
+
+            @media only screen and (max-width:768px){
+              
+                .box {width: 100%;}
+                .box .context {flex-direction: row ;}
+                .context img {padding: 1%;}
+
+                .footer{height: 100vh;}
+
+                .footer .context{
+                    display: flex;
+                    width: 100%;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .container-3 iframe {
+                    display: none;
+                }
+
+
+            }
+
+    
+        
+     </style>
+</head>
+
+<body class="shb5">
+<nav class="menu-bar">
+     <input type="checkbox" id="check">
+     <label for="check" class="check-button">
+          <i class="fas fa-bars"></i>
+     </label>
+     <label class="logo"> <img src="images/LOGO.png" style="width: 180px; margin-top:15px;" alt=" some of beenfits"></label>
+     <ul>
+          <li><a href="index.html"> HOME PAGE</a></li>
+          <li><a href="howItWorks.html">HOW IT WORKS?</a></li>
+          <li><a href="bicycleTypes.html">BICYCLE TYPES</a></li>
+          <li><a href="conctactUs.html">CONTACT US</a></li>
+          <li><a href="signUp.html">SIGN UP</a></li>
+          <li><a href="logIn.html">LOG IN</a></li>
+     </ul>
+</nav>
+
+<div>
+     <br>
+     <div class="MyParagrahpStyle container-form2">
+
+          <h2 class="text-center"><br>Log In</h2>
+          <form>
+               <br><input type="text" name="UserNameInput" class="input-text" placeholder="User Name"
+                          style="width: 100%;"> <br> <br>
+               <input type="text" name="PasswordInput" placeholder="Password" SIZE="25"
+                      class="input-text" style="width: 100%;"><br>
+               <br>
+               <input type="button" name="button" value="LOG IN" class="button" style="width: 100%;"
+                      onClick="ValidationCheck(this.form)"><br>
+               <br>
+               <div class="text-center"><input type="checkbox" checked="checked" name="remember"> Remember me</div>
+               <br>
+               <p class="text-center"><u style="color: blue;">Forget Your Password?</u></p> <br>
+               <br>
+          </form>
+
+     </div>
+</div>
+<br><br>
+
+<div class="footer">
+     <!-- The Div containing the footer -->
+     <div class="context">
+          <h3>Contact Us</h3>
+          <p> If you want to share your opinion, suggestion or complaint, you can send it to us by filling the "Contact
+               Us Form". We will evaluate it as soon as possible and get back to you.</p>
+     </div>
+     <div class="context">
+          <h3>About Us</h3>
+          <p> BikEco is a newly established rental bike supplier in London, was established in 2021 in order to
+               contribute to the environment, people's health, both physical and mental, and similar aspects.
+          </p>
+     </div>
+     <div class="context">
+          <h3>How It Works?</h3>
+          <p> Do not miss the chance to rent a bike in 4 steps. For detailed information, please visit this <a
+                   href="howItWorks.html"><strong>page</strong></a>.
+               If you think this page does not provide enough help, you can send us an <A HREF=mailto:BikEco@gmail.com>
+                    <strong>email</strong></A>.</p>
+     </div>
+     <div class="social">
+          <div class="header"> <br>
+               <p style="font-weight: bold; text-align: center;">Follow us on social media to support and hear the
+                    latest announcements!</p>
+          </div>
+          <div class="context-media">  <br>
+               <a href="http://www.facebook.com"> <i class="fab fa-facebook"></i></a>
+               <a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
+               <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+          </div>
+          <br> <strong>© 2021 BikEco</strong>
+     </div>
+</div>
+
+
+</body>
+</html>

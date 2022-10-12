@@ -1,0 +1,350 @@
+<!doctype html>
+<!-- This is a page created for Web Design Module Assignment. Copyright Zeynep Ermis 2021 -->
+<html lang="en">
+<!-- This tag is specify the language on this page is English, only by default this can be assumed the case with HTML -->
+    <head>
+        <Title>BikEco</Title>
+        <link rel="stylesheet" type="text/css" href="textstyle.css"/>
+        <meta charset="UTF-8">
+        <link rel="icon" href="images/favicon.ico"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/><!-- This is Font-Awosome link for some icons -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+
+            *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+            font-family: calibri;
+            }
+            label.logo{
+            color: white;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 100px;
+            font-weight: bold;
+            }
+
+            /* Navigation Bar Section*/
+            .menu-bar{
+            background: #fca311;
+            height: 80px;
+            width: 100%;
+            }
+
+            .menu-bar ul{
+            float: right;
+            margin-right: 20px;
+            }
+
+            .menu-bar ul li{
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+            }
+
+            .menu-bar ul li a{
+            color: white;
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            font-weight: bold;
+            }
+
+            .menu-bar ul li a:hover {
+                background: #ffdfaa;
+                border-radius: 4px;
+                color: #fff;
+            }
+
+            /*  Check Box Class */
+            .check-button{
+            font-size: 30px;
+            color: white;
+            float: right;
+            line-height: 80px;
+            margin-right: 40px;
+            cursor: pointer;
+            display: none;
+            }
+
+            #check{
+            display: none;
+            }
+            
+              /*  Responsive Menu Design  */
+            @media (max-width: 952px){
+
+            nav ul li a{
+                font-size: 16px;
+            }
+            }
+            @media (max-width: 858px){
+            .check-button{
+                display: block;
+            }
+            .menu-bar ul{
+                position: fixed;
+                width: 100%;
+                height: 100vh;
+                background:#FFCC66;
+                top: 80px;
+                left: -100%;
+                text-align: center;
+                transition: all .5s;
+            }
+            .menu-bar ul li{
+                display: block;
+                margin: 50px 0;
+                line-height: 30px;
+            }
+            .menu-bar ul li a{
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .menu-bar ul li a:hover {
+                background: #ffdfaa;
+                border-radius: 4px;
+                color: #fff;
+            }
+            #check:checked ~ ul{
+                left: 0;
+            }
+            }
+
+            /*  Responsive Footer Design  */
+            @media only screen and (max-width:768px){
+            .footer{height: 100vh;}
+
+            .footer .context{
+                        display: flex;
+                        width: 100%;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                    }
+            
+                }
+
+            .con{
+                padding: 0px;
+                align-items: center;
+                display: flex;
+            }
+
+            aside{
+                width: 40%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+    
+        </style>
+    </head>
+
+    <body>
+        <nav class="menu-bar"> <!-- Navigation Bar Section-->
+            <input type="checkbox" id="check">
+            <label for="check" class="check-button">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo"> <img src="images/LOGO.png" style="width: 180px; margin-top:15px;" alt=" some of beenfits"></label>
+            <ul>
+                <li><a href="index.html"> HOME PAGE</a></li>
+                <li><a href="howItWorks.html">HOW IT WORKS?</a></li>
+                <li><a href="bicycleTypes.html">BICYCLE TYPES</a></li>
+                <li><a href="conctactUs.html">CONTACT US</a></li>
+                <li><a href="signUp.html">SIGN UP</a></li>
+                <li><a href="logIn.html">LOG IN</a></li>
+                <li>
+                    <form><INPUT placeholder="Search" TYPE="text" SIZE="25" class="input-text"></form>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="photo-gallery2">
+            <br><h1 class="text-center">BICYCLE TYPES</h1>
+            <br>
+            <h2>City Bike</h2> <img class="zoom" src="images/citybike.jpg" alt="City Bike"> 
+                <br><br>
+                <ul>
+                    <li>FRAME Aethos FACT 10r Carbon, Rider First Engineered™, Threaded BB, 12x142mm thru-axle,
+                        flat-mount disc.
+                    </li>
+                    <li>FORK FACT Carbon, 12x100mm thru-axle, flat-mount disc.</li>
+                    <li>HANDLEBARS S-Works Short & Shallow.</li>
+                    <li> BRAKES Shimano Ultegra R8070, hydraulic disc.</li>
+                </ul>
+             <br>
+             <h2>Child-Parent Tandem</h2> 
+                <br>
+                <img class="zoom" src="images/child-parenttandem.jpg" alt="Child-Parent Tandem">
+                <br><br>     
+                <ul>
+                    <li>Child-parent tandem with a grown-up sitting behind and a child sitting in front.</li>
+                    <li>Standard 8 gears and a freewheel switch.</li>
+                    <li>Weight Bicycle +/- 39 kg.</li>
+                    <li>Max. User weight p.p.120 kg.</li>
+                </ul>
+              <br>
+
+            <br> <h2>Mountain Bike</h2> 
+                <br>
+                <img class="zoom" src="images/mountainbike.jpg" alt="Mountain Bike"> 
+                <br><br>
+                <ul>
+                    <li>A lightweight frame and 27.5".</li>
+                    <li>The 1x drivetrain makes shifting simple and easy.</li>
+                    <li>Shimano Deore 1x11</li>
+                    <li>New RockShox Recon Silver RL 27.5 fork</li>
+                    <li>RockShox Deluxe Select R rear suspension</li>
+                </ul>
+             <br>
+            
+            <br><h2>E-scooter</h2> 
+                <br>
+                <img class="zoom" src="images/e-scooter.png" alt="E-scooter"> 
+                <br><br>
+                <ul>
+                    <li>Top speed of 15mph (25kmh).</li>
+                    <li>Maximum range of 18 miles (30km).</li>
+                    <li>Fully charged in 5.5 hrs.</li>
+                    <li>Front and rear brakes and lights.</li>
+                    <li>12.5kg lightweight aluminium frame.</li>
+                    <li>Front and rear brakes and lights.</li>
+                    <li>Maximum user weight 100kg.</li>
+                </ul>
+             <br>
+        </div>
+
+    <h1>BOOK NOW!</h1> 
+    <br>
+    <p class="MyParagrahpStyle">If you want to view <strong>pricing list</strong>, please click
+         on this please  visit this <a href="howItWorks.html"><strong>page</strong>.</a> </p> <br> 
+
+    <div class="container-form MyParagrahpStyle" style="margin: auto;">
+         <form><strong>First Name : <br></strong><INPUT NAME="Name-input" TYPE="text" style="width: 90%"
+                                                        placeholder="Your Name" class="input-text2"></form>
+         <br>
+         <form><strong> Surname : <br></strong><INPUT NAME="Surname" TYPE="text" placeholder="Your Surname"
+                                                      class="input-text2" style="width: 90%"></form>
+         <br>
+         <form><strong> E-mail : <br></strong><INPUT TYPE="text" name="Email-input" placeholder="Enter Email"
+                                                     class="input-text2" style="width: 90%"></form>
+         <br>
+         <form><strong> Contact Number : <br></strong><INPUT NAME="Contact Number" TYPE="text"
+                                                             placeholder="Enter Contact Number"
+                                                             class="input-text2"  style="width: 90%"></form>
+         <br>
+         <strong> Adress Line : <br> </strong><INPUT NAME="Contact Number" TYPE="text"
+                                                     placeholder="Enter Your Adress" class="input-text2"
+                                                     style="width: 90%">
+         <br><br>
+         <form><strong> Adress Line 2 : <br> </strong><INPUT NAME="Contact Number" TYPE="text"
+                                                             placeholder="Enter Your Adress"
+                                                             class="input-text2"  style="width: 90%"></form>
+         <br>
+         <form><strong> Date of Birth :<br> </strong><INPUT NAME=" Date of Birth" TYPE="date"
+                                                            class="input-text2"  style="width: 90%"></form>
+         <br>
+         <form><strong>Comments : <br></strong><TEXTAREA NAME="comments" class="input-textarea"
+            style="width: 90%"> </TEXTAREA></form>
+         <br>
+         <strong> Please, choose which location to pick up from : </strong><SELECT NAME="Available Locations"
+                                                                                   class="input-text2"
+                                                                                   style="width: 90%">
+         <OPTION SELECTED> Available Locations
+         <OPTION> Hyde Park
+         <OPTION> Buckingam Place
+         <OPTION> Blackfriars Underground
+         <OPTION>Tower of London
+         <OPTION>Mile End Park
+         <OPTION> Victoria Park
+    </SELECT>
+         <br><br>
+
+         <strong> Bicycle Type : <br> </strong> <SELECT NAME="Bicycle type" class="input-text2"
+                                                         style="width: 90%">
+         <OPTION SELECTED> Bicycle type
+         <OPTION> City Bike
+         <OPTION> E-Scooter
+         <OPTION> Child/Parent-Children Tandem
+         <OPTION>Mountain Bike
+    </SELECT>
+         <br><br>
+         <div>
+              <form><strong> Accepted Cards: </strong> <br>
+                <i class="fab fa-cc-visa" style="color:navy; font-size: 29px;"></i>
+                <i class="fab fa-cc-mastercard" style="color:red; font-size: 29px;"></i>
+                <i class="fab fa-cc-amex" style="color:orange; font-size: 29px;"></i>
+                <i class="fab fa-cc-paypal" style="color:blue; font-size: 29px;"></i>
+              </form>
+              <br>
+         
+              <form><strong>Name on Card: </strong>
+                   <input type="text" id="cname" name="cardname" placeholder="Josh Alan" class="input-text2"
+                   style="width: 90%"> <br>
+              </form>
+              <br>
+              <form><strong>Credit Card number: </strong>
+                   <input type="text" name="cardnumber" placeholder="1111-2222-3333-4444" class="input-text2"
+                   style="width: 90%">
+              </form>
+              <br>
+              <form><strong>Expiry Month: </strong>
+                   <input type="text" id="expmonth" name="expmonth" placeholder="December" class="input-text2"
+                   style="width: 90%">
+              </form>
+              <br>
+              <form><strong>Expiry Year: </strong>
+              <input type="text" id="expyear" name="expyear" placeholder="2025" class="input-text2"
+              style="width: 90%">
+              </form>
+              <br>
+              <form><strong>CVV:</strong><br>
+                   <input type="text" id="cvv" name="cvv" placeholder="111" class="input-text2"
+                   style="width: 90%">
+              </form>
+              <br>
+                   <input type="submit" name="Mybutton" value="Submit!" class="button"
+                   style="width: 90%"><br>
+         </div>
+         <br><br>
+    </div> <br><br>
+
+
+<div class="footer">
+    <!-- The Div containing the footer -->
+    <div class="context">
+        <h3>Contact Us</h3>
+        <p> If you want to share your opinion, suggestion or complaint, you can send it to us by filling the "Contact Us Form". We will evaluate it as soon as possible and get back to you.</p>
+    </div>
+    <div class="context">
+        <h3>About Us</h3>
+        <p> BikEco is a newly established rental bike supplier in London, was established in 2021 in order to contribute to the environment, people's health, both physical and mental, and similar aspects.
+            </p>
+    </div>
+    <div class="context">
+        <h3>How It Works?</h3>
+        <p> Do not miss the chance to rent a bike in 4 steps. For detailed information, please  visit this <a href="howItWorks.html"><strong>page</strong></a>. 
+            If you think this page does not provide enough help, you can send us an <A HREF=mailto:BikEco@gmail.com> <strong>email</strong></A>.</p>
+    </div>
+    <div class="social"> 
+        <div class="header"> <br>
+            <p style="font-weight: bold; text-align: center;">Follow us on social media to support and hear the latest announcements!</p>
+        </div>
+        <div class="context-media">  <br>
+            <a href="http://www.facebook.com"> <i class="fab fa-facebook"></i></a>
+            <a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+        </div>
+         <br> <strong>© 2021 BikEco</strong>
+    </div>
+</div>
+
+
+    </body>
+    </html>
